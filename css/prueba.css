@@ -1,1 +1,248 @@
 /* En este archivo debe agregar las clases CSS que considere necesarias para la realización de las pruebas de páginas Estáticas */
+/*estilo general*/
+/*Eliana ARJONA*/
+
+.fa-link:hover,.fa-external-link-alt:hover,
+.fa-window-restore:hover,.fa-window-maximize:hover{
+	background: #0069d9;
+}
+
+.right{
+	float: right;
+	width: 50%;
+}
+
+.left{
+	float: left;
+	width: 50%;
+	padding-right: 10px;
+}
+
+.tag{
+	color: #007bff;
+	font-weight: bold;
+	padding-top: 15px;
+}
+
+.input,.txt-observaciones {
+	width: 100%;
+	border-radius: 5px;
+	background-color: #e9ecef;
+	border: solid 2px #C4CED7;
+	height: 50px;
+}
+
+.txt-observaciones{
+	height: 80px;
+	overflow: auto;
+}
+
+.observaciones{
+	padding-bottom: 10px;
+}
+
+.formulario{
+	padding:  0;
+	width: 75%;
+	margin:  0px 25% 0px 15%;
+}
+
+.send {
+  float: right;
+  background-color: #6c757d;
+  border-color: #6c757d;
+  color: #fff;
+  border: none;
+  width: 15%;
+  font-size: 10pt;
+  padding: 5px;
+}
+
+.send:hover {
+  color: #fff;
+  background-color: #5a6268;
+  border-color: #545b62;
+}
+
+.btn-secondary {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.btn-secondary:hover {
+  color: #fff;
+  background-color: #5a6268;
+  border-color: #545b62;
+}
+
+#message{
+	color: white;
+	border-radius: 5px;
+	padding: 15px;
+	margin: 5px;
+	font-size: 12pt;
+	font-weight: bold;
+}
+
+.label_servicios{
+	background-color: white;
+	width: 55%;
+	margin-right: 45%;
+	border-radius: 5px;
+	font-style: italic;
+}
+.hr{
+	width: 100%;
+	margin-bottom: 50px; 
+	background-color: #C4CED7;
+}
+
+.tag_blue {
+	color:#007bff;
+	display: inline;
+	font-weight:bold;
+}
+.tag_black{
+	display: inline;
+}
+
+#required, #requiredEmail{
+	font-size: 12pt;
+	color: #ff0000;
+}
+
+
+/*Para Desktop*/
+@media (min-width: 1024px){
+
+.label_servicios{
+	background-color: white;
+	width: 40%;
+	margin-right: 60%;
+	margin-bottom: 50px;
+}
+
+.title{
+  font-size: 12pt;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+
+.icon{
+	width: 25%;
+	padding: 30px; 
+	text-align: center;
+}
+
+.desc {
+    font-size: 10pt;
+    text-align: center;
+    visibility: visible;
+}
+
+.btn-secondary{
+	font-size: 70%;
+	visibility: visible;
+}
+
+.fa-link, .fa-external-link-alt,.fa-window-restore, .fa-window-maximize {
+	color: white;
+	width:  130px;
+	height: 130px;
+	font-size: 50px; 
+	line-height: 100px;
+	background: #007bff; 
+	padding: 15px;
+	border-radius: 70px;
+	text-align: center; 
+}
+
+}/*Fin desktop*/
+
+
+/**Para Tablet */
+
+@media (min-width: 768px) and (max-width: 1023px ){
+
+.icon{
+	padding-top: 20px;
+	width: 50%;
+	text-align: center;
+}
+
+.fa-link, .fa-external-link-alt,.fa-window-restore, .fa-window-maximize {
+	color: white;
+	width:  130px;
+	height: 130px;
+	font-size: 50px; 
+	line-height: 100px;
+	background: #007bff; 
+	padding: 15px;
+	border-radius: 70px; 
+	text-align: center;
+}
+
+.title{
+  font-size: 12pt;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+}
+/*Para Mobile */
+@media (min-width: 300px) and (max-width:767px){
+
+.desc{
+    visibility: hidden;
+}
+
+.btn-secondary{
+	visibility: hidden;
+}
+
+.icon{
+	width: 100%;
+	text-align: center;
+}
+
+
+.fa-link,.fa-external-link-alt,.fa-window-restore, .fa-window-maximize {
+	color: white;
+	width:  130px;
+	height: 130px;
+	font-size: 50px; 
+	line-height: 130px;
+	background: #007bff; 
+	border-radius: 70px; 
+	text-align: center;
+}
+
+
+.title {
+  font-size: 9pt;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.label_servicios{
+	font-size: 12pt;
+}
+
+
+.formulario{
+	padding:  0;
+	width: 90%;
+	margin:  0px 30% 0px 10%;
+	font-size:10pt;
+}
+
+#required, #requiredEmail{
+	font-size: 10pt;
+	color: red;
+}
+
+
+
+} /*fin mobile*/
