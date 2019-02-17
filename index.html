@@ -112,11 +112,67 @@
           </div>
 
           <!-- Por favor borrar este contenido al momento de empezar con su respuesta -->
-          <div class="col-md-12 text-left">
-            <div class="ans">
-              <i>Su respuesta aquí, editar en el código de index.html</i>
+          <br>
+          <div class="label_servicios">
+            <h6 class="tag_black">SERVICIOS</h6>
+            <h6 class="tag_blue">RESPONSIVE</h6>
+          </div>
+          <hr class="hr">
+           
+          <br>       
+              <div class="icon">
+                <a href="https://bluetideconsulting.com/servicios/web"><i class="fas fa-link"></i></a>
+                <p class="title">NORMAL LINK</p>
+                <p class="desc">Alienum phaedrum torquatos nec eu vis detraxit periculis ex, nihil expetendis in mei.<br>
+                Mei a pericula euripidis.</p>
+
+                <button class="btn btn-secondary" onclick="location.href='https://bluetideconsulting.com/servicios/web/'">MAS INFORMACIÓN</button>
+              </div>
+
+              <div class="icon">
+                <a href="https://bluetideconsulting.com/servicios/web/#empezar"><i class="fas fa-external-link-alt" ></i></a>
+                 <p class="title">COTIZA LINK</p>
+                <p class="desc">Alienum phaedrum torquatos nec eu vis detraxit periculis ex, nihil expetendis in mei.<br>
+                Mei a pericula euripidis.</p>
+
+                <button class="btn btn-secondary" onclick="window.open('https://bluetideconsulting.com/servicios/web/#empezar','_self')">MAS INFORMACIÓN</button>
+              </div>
+
+              <div class="icon">
+                <a href="https://bluetideconsulting.com/servicios/web/" target="_blank" ><i class="far fa-window-restore"></i></a>
+                 <p class="title">NEW TAB LINK</p>
+                <p class="desc">Alienum phaedrum torquatos nec eu vis detraxit periculis ex, nihil expetendis in mei.<br>
+                Mei a pericula euripidis.</p>
+                 <button class="btn btn-secondary" onclick=" window.open('https://bluetideconsulting.com/servicios/web/','_blank')" >MAS INFORMACIÓN</button>
+              </div>
+
+              <div class="icon">
+                <a data-toggle="modal" data-target="#modal"  ><i class="far fa-window-maximize"></i></a>
+                 <p class="title">MODAL LINK</p>
+                <p class="desc">Alienum phaedrum torquatos nec eu vis detraxit periculis ex, nihil expetendis in mei.<br>
+                Mei a pericula euripidis.</p>
+                <button class="btn btn-secondary" data-toggle="modal" data-target="#modal" >MAS INFORMACIÓN</button>
+              </div>
+
+            <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-hidden="true">
+                  <div class="modal-dialog modal-lg" role="document">
+
+                    <div class="modal-content">
+
+                      <div class="modal-body mb-0 p-0">
+
+                        <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                          <iframe class="embed-responsive-item" src="https://bluetideconsulting.com/servicios/web/" allowfullscreen></iframe>
+                        </div>
+
+                      </div>
+                  </div>
+
             </div>
           </div>
+
+          <hr class="hr">
+          
           <!-- Borrar hasta aquí -->
 
         </div>
@@ -156,12 +212,45 @@
           <div class="col-md-12 text-left pt-5 pb-5">
             <small class="mini-title">Espacio de respuesta:</small>
           </div>
-
           <!-- Por favor borrar este contenido al momento de empezar con su respuesta -->
           <div class="col-md-12 text-left">
-            <div class="ans">
-              <i>Su respuesta aquí, editar en el código de index.html</i>
+
+            <div class="label_servicios">
+              <h6 class="tag_black">FORMULARIO DE</h6>
+              <h6 class="tag_blue">CONTACTO</h6>
             </div>
+          
+           <hr class="hr">
+
+            <form method="POST" name="Form" class="formulario" onsubmit="event.preventDefault(); verify()">
+           
+             <div class="left">
+               <label class="tag">NOMBRE</label><label id="required"></label><br>
+               <input type="text" name="name" class="input" id="name"><br>
+
+               <label class="tag">TELEFONO</label><br>
+               <input type="number" name="telefono" class="input" id="tlfn"><br>
+            </div>
+            <div class="right">   
+              <label class="tag">APELLIDOS</label><br>
+               <input type="text" name="last" class="input" id="last"><br>
+              
+               <label class="tag">CORREO ELECTRONICO</label><label id="requiredEmail"></label><br>
+               <input type="text" name="email" class="input" id="email" ><br>
+            </div>
+               <label class="tag">¿ESTAS INTERESADO EN?</label><br>
+               <input type="text" name="interes" class="input" id="interest"> <br>
+            <div class="observaciones">
+               <label class="tag">OBSERVACIONES</label><br>
+               <textarea class="txt-observaciones" id="observations"></textarea>
+            </div>
+           <!--<input type="submit" name="send" value="ENVIAR" class="send"> -->
+           <button name="send" class="send">ENVIAR</button><br><br>
+           <p id="message"></p>
+         </form>
+
+          
+
           </div>
           <!-- Borrar hasta aquí -->
 
@@ -189,7 +278,68 @@
 
               <div class="col-md-12 text-left">
                 <div class=" ans">
-                  <p>Sustentar aquí los tipos de tags implementados.</p>
+                  <p>En mi opinion estos son lo tags mas relevantes para garantizar un buen posicionamiento dle sitio en los SEO. Para propositos de la prueba coloque lo tags en este sitio, pero en realidad deben ir en el head del código HTML.</p>
+
+                  <h6>Title Tag:</h6>
+                  <p>
+                    Es lo primero que los usuarios toman en cuenta cuando realizando una búsqueda de información en su navegador. El tag permite que se muestre una información clara y precisa sobre el contenido de la página web, lo cual llama a la atención de lo usuarios y le permite identificar rápidamente si es el contenido que están buscando
+                  </p>
+                  <p><title>BTC Test - Bluetide Web Consulting</title></p>
+
+                  <h6>Meta Description</h6>
+                  <p>
+                    Al igual que el Title tag, este ayuda a proveer más información sobre el sitio en lo resultado del SERP, eliminando aún más la ambigüedades del usuario sobre si el contenido de la página es lo que está buscando, de esta forma se agrega una ventaja a su página sobre lo miles de resultado que arroja el SERP.
+                  </p>
+                  <p> <meta name="description" content="This page is a test designed for evaluate the skills the applicant has in web desing"></p>
+
+                  <h6>Meta robot tag</h6>
+                  <p>
+                    Este tag se permite indicar cuáles páginas el search Engine Crawler puede o no indexar y cuales links puede o no seguir el search engine, ayuda a proteger la integridad de la página, además, permite que la demanda de tu sitio aumente al no indexar página que tienen poca importancia para el sitio, es decir, aumenta lo que se conoce como el “crawl demand” dando mayor popularidad en el SEO
+                  </p>
+                  <p><meta name="robots" content="noindex" /></p>
+
+                  <h6>Header Tag</h6>
+                  <p>Utilizar header tags no solo organizan mejor el sitio, también, ayudar a tener un buen ranking en los search engine, sobretodo el tag de que es el más importante. La razón por la cual se debe usar este tag es que, permite a los crawlers de search engine entender el tipo de contenido que posee tu sitio y pueden arrojalo con mayor precisión a usuarios que lo necesiten, aumentando así la popularidad y ranking de la página en los search engine</p>
+                  <p><!--<h1>BTC-Pasantias</h1>--></p>
+
+                  <h6>Canonical Tag</h6>
+                  <p>
+                    Ayuda a los SEO a escoger cual, de todos el contenido de tu sitio, es el que contiene la versión original con la información más relevante. Ayuda a evitar conflictos como, por ejemplo, que el SEO escoja el URL equivocado de tu pagina y baje el ranking de tu sitio en los resultados de la búsqueda del usuario ya que fue escogida para mostrar la página errónea que no tendrá muchas visitas.
+                  </p>
+                  <p><link rel=”canonical” href=”https://bluetideconsulting.com/servicios/web/”/></p>
+
+                  <h6>Schema.org markup</h6>
+                  <p>Es importante incluirlo en el sitio ya que, incluyen información que los grandes navegadores como Google, Bing, Yahoo y Yandex necesitan especificamente, ya que ellos mismos, en una colaboración,  los crearon. Los Schema.org markup hacen que el serach engine entienda aún más fácilmente el contenido de la página y el posicionamiento en el ranking disminuya, haciendo que siempre este en los primero resultados del SERP.</p>
+                  <p>
+                    <meta itemprop="name" content="BTC Test - Bluetide Web Consulting">
+                    <meta itemprop="description" content="This page is a test designed for evaluate the skills the applicant has in web desing">
+                    <meta itemprop="image" content="http://www.example.com/bg-showcase-2.jpg">
+                  </p>
+
+                  <h6>Open Garph Meta Tag</h6>
+                  <p>
+                    Son snipets que permiten que la información del sitio se comunique con las redes sociales, estos tag también permiten que la información de tu sitio sea más correcta y adecuada para los usuarios, aumentando así el Click-Through Rates (CTRs).
+                  </p>
+                  <p>
+                    <meta property="og:title" content="BTC Test - Bluetide Web Consulting" />
+                    <meta property="og:type" content="website" />
+                    <meta property="og:url" content="https://bluetideconsulting.com/servicios/web/" />
+                    <meta property="og:image" content="http://example.com/bg-showcase-2.jpg" />
+                    <meta property="og:description" content="This page is a test designed for evaluate the skills the applicant has in web desing" />
+                  </p>
+
+                  <h6>Twitter Card Meta Tags</h6>
+                  <p>
+                    Twitter es una red muy popular actualmente, estos tags permite utilizar una propiedad desarrollada por ellos llamada “Twiter Card”, esta, a través de la recolección de datos promocionados en los tags, ayuda a que el sitio sea más conocido y, por lo tanto, que tenga un mejor ranking en los navegadores.
+                  </p>
+                  <p>
+                    <meta name="twitter:card" content="summary">
+                    <meta name="twitter:site" content="@BTC_handle">
+                    <meta name="twitter:title" content="BTC Test - Bluetide Web Consulting">
+                    <meta name="twitter:description" content="This page is a test designed for evaluate the skills the applicant has in web desing">
+                    <meta name="twitter:image" content="http://www.example.com/bg-showcase-2.jpg">
+                  </p>
+                  
                 </div>
               </div>
             </div>
